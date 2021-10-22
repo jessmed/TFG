@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1><b>BACHELOR THESIS OF COMPUTER ENGINEERING</b></h1>
+<h2><i>Use of Text Mining tools to extract information associated with Covid-19</i></h2>
+
+    <div class="row">
+        <div class="col-md-6">
+            <br>
+            <br>
+            <p>In this day and age, the world has been plagued by a worldwide pandemic, known as COVID-19 or SARS-CoV-2, for almost 2 years.
+            We live in the age of big data and immense amounts of information on the subject are published every day.
+                <br> So much that it is impossible to digest it all.
+                <br>
+            According to studies from last year 2020, scientific publications on COVID-19 grew exponentially over the months reaching 160,000 publications by the end of that year. There are no recent studies documenting the number, but all indications are that the number could have increased tenfold.
+                <br>
+            To date, in pursuit of finding factors related to its contagion, behavior and cure, studies of all kinds and from different perspectives have been carried out, resulting in publications on numerous topics.
+                In this work we propose to use text mining tools to identify these topics from a document base.
+            Specifically, a Latent Dirichlet Allocation (LDA) model will be trained, through which a number of topics will be inferred by grouping all the documents in the database.
+                <br>
+            The ultimate purpose of the project is the creation of this software application from the generated model, which facilitates the users the task of documentation for a project. It allows to identify to which specific topic or topics a publication belongs, a very conflictive action that is aggravated by the magnitude of existing documents.</p>
+        </div>
+
+        <div class="col-md-5">
+            <br>
+            <br>
+            <p>  <img  src="../../static/images/Foto_carnet.jpeg" align="right" style="height:210px;  border-radius: 50%; box-shadow: 0 0 8px rgba(0, 0, 0, .8); -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8); -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);" />Hello, I am Jesús Medina Taboada, a student at the university of Granada in the degree of computer engineering.
+                <br>
+I studied the mention of computing and intelligent systems and I have developed this web application in order to help students, researchers or anyone who needs a tool when it comes to documenting for a project.
+                <br>
+It often happens that when we start to gather information for a project we are overwhelmed by the large number of publications and articles that exist today and that do not stop growing.
+                <br>
+This application seeks to facilitate this process of search and contrast thanks to the use of themes that identify each publication, thus allowing the user to know what the documents are about without having to spend time reading them.
+In the application we will see this idea under a document base on coronavirus but its application could easily be extrapolated to many other fields of knowledge and data collections. </p>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+
+        <div class="col-md-3">
+            <img src="../../static/images/Kaggle_logo.png"  width="60%" height="60%">
+        </div>
+        <div class="col-md-3">
+            <img src="../../static/images/python-logo.png"  width="40%" height="40%">
+        </div>
+
+        <div class="col-md-3">
+            <img src="../../static/images/Django-Logo.png"  width="60%" height="60%">
+        </div>
+        <div class="col-md-3">
+            <img src="../../static/images/ugr_logo.png"  width="100%" height="100%">
+        </div>
+    </div>
+
+
+{% endblock %}

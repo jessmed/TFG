@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1><b>List of documents</b></h1>
+        <p class="lead">Here you can find all the avaible documents about covid-19</p>
+            <section id="auth-button" style="padding:5px 0 10px;float:right;"></section>
+
+            <!--SECCIÓN DONDE SE CARGAN TODOS LOS PAPERS DISPONIBLES DINAMICAMENTE, SE LEEN DE UNA LISTA-->
+
+
+          <div class="row">
+            <div class="col-md-4">
+                {% for doc in docs_1 %}
+                    <a href="/document/?doc={{doc}}&mode=TEXT" style="color: aliceblue;">{{doc}}</a><br>
+                {% endfor %}
+            </div>
+            <div class="col-md-4">
+                {% for doc in docs_2 %}
+                    <a href="/document/?doc={{doc}}&mode=TEXT" style="color: aliceblue;">{{doc}}</a><br>
+                {% endfor %}
+            </div>
+            <div class="col-md-4">
+              {% for doc in docs_3 %}
+                    <a href="/document/?doc={{doc}}&mode=TEXT" style="color: aliceblue;">{{doc}}</a><br>
+                {% endfor %}
+            </div>
+          </div>
+
+
+
+
+
+{% endblock %}

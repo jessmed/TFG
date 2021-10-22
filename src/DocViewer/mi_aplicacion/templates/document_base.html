@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <!--
+    # Argumentos que intervienen en la plantilla
+    # -paper_id
+    # -title
+    # -text,color
+    Para cada abstract extraemos unn fragmento de texto(puede ser uno que sería el texto completo)
+    luego extraemos el campo texto y color para renderizarlos al html
+    -->
+    <h2>Paper id: {{ paper_id }}</h2>
+
+    <h2>Title: {{ title }}</h2>
+
+    <div class="div">
+        {% for abs in abstract %}
+            <span style="background-color: {{abs.color}};" >{{abs.text}}</span>
+        {% endfor %}
+    </div>
+
+
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3 class="modal-title" style="font-weight:bold; text-align: center;">TOPIC LIST</h3>
+          </div>
+          <div class="modal-body">
+              {% include 'topics.html' %}
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" style="background-color:#df691a" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+{% endblock %}
