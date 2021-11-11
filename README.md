@@ -1,3 +1,3 @@
 # TFG
 
-Se puede consultar la [memoria del proyecto](./Memoria_TFG.pdf)
+Se puede consultar la [memoria del proyecto](Memoria_TFG.pdf)
